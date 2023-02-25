@@ -27,3 +27,24 @@ function password(){
 }
 
 password();
+
+
+    let money = parseFloat(prompt("¿How much money would you like to enter?"));
+    if(money >20 && money <=500){
+        alert("The money entered is correctly");
+        console.log("correct amount");
+    } else if(money <20 || money >500){
+        alert("That amount of money is not allowed, enter amount greater than 20 and less than 500")
+    }
+    console.log(money); 
+
+
+
+function costo(deposito, mantenimientoDeCuenta, interes){
+    let total = (deposito - mantenimientoDeCuenta)*interes;
+    console.log(total)
+}
+let num1 = money;
+let num2 = parseFloat(20);
+let num3 = parseFloat(1.5);
+costo(num1, num2, num3);
