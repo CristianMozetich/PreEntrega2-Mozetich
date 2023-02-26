@@ -1,13 +1,8 @@
 function usuario(){
     let nombreDeUsuario = prompt("Enter username");
-    for (let i=0; i=5; i++){
-        if (nombreDeUsuario == "cristian"){
-            alert ("Welcome " + nombreDeUsuario);
-            console.log(nombreDeUsuario);
-            break;
-        } else {
-            nombreDeUsuario = prompt("Wrong username, please try again");
-        }
+    console.log("Welcome " + nombreDeUsuario);
+    while (nombreDeUsuario === ""){
+        nombreDeUsuario = prompt("Wrong username, try again");
     }
 }
 
