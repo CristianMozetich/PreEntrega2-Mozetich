@@ -46,4 +46,5 @@ function costo(deposito, mantenimientoDeCuenta, interes){
 let num1 = money;
 let num2 = parseFloat(20);
 let num3 = parseFloat(1.5);
+
 costo(num1, num2, num3);
