@@ -43,7 +43,7 @@ arrayPlan.forEach (plan =>{
     divPlan.appendChild(div);
 });
 
-
+divPlan.className = "tarjetas";
 
 function monstrarDetalles(account){
     if (account === 1){
