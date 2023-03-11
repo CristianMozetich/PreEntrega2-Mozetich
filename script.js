@@ -19,28 +19,28 @@ function cuentas (){
 }
 
 
-class accounts{
+class plan{
     constructor(name, price){
         this.name = name;
         this.price = price;
     }
 }
-const standard = new accounts ('standard', 5);
-const smart = new accounts ('smart', 10);
-const premium = new accounts ('premium', 20);
+const standard = new plan ('standard', 5);
+const smart = new plan ('smart', 10);
+const premium = new plan ('premium', 20);
 
 
-const arrayAccounts = [standard, smart, premium];
-console.log (arrayAccounts);
+const arrayPlan = [standard, smart, premium];
+console.log (arrayPlan);
 
 
-const divAccounts = document.getElementById ("container")
-arrayAccounts.forEach (accounts =>{
+const divPlan = document.getElementById ("container")
+arrayPlan.forEach (plan =>{
     const div = document.createElement ("div");
-    div.innerHTML = `<p>Name: ${accounts.name} </p>
-                     <p>Price: ${accounts.price} </p>
+    div.innerHTML = `<p>Name: ${plan.name} </p>
+                     <p>Price: ${plan.price} </p>
                      <button>Get this account</button>`
-    divAccounts.appendChild(div);
+    divPlan.appendChild(div);
 });
 
 
