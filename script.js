@@ -7,6 +7,7 @@ function cliente(){
     return usuario
 }
 let usuario = cliente()
+console.log(usuario)
 
 
 function cuentas (){
@@ -17,16 +18,6 @@ function cuentas (){
     monstrarDetalles (account);
 }
 
-function monstrarDetalles(account){
-    if (account === 1){
-        alert ("Usted selecciono cuenta Standard");
-    } else if (account === 2){
-        alert ("Usted selecciono cuenta Smart");
-    } else if (account === 3){
-        alert ("Usted selecciono cuenta Premium");
-    }
-}
-cuentas();
 
 class accounts{
     constructor(name, price){
@@ -52,9 +43,21 @@ arrayAccounts.forEach (account =>{
     divAccounts.appendChild(div);
 });
 
-arrayAccounts.forEach(account =>{
-    console.log(account.price)
-})
+
+
+function monstrarDetalles(account){
+    if (account === 1){
+        alert ("Usted selecciono cuenta Standard");
+        console.log (standard);
+    } else if (account === 2){
+        alert ("Usted selecciono cuenta Smart");
+        console.log(smart);
+    } else if (account === 3){
+        alert ("Usted selecciono cuenta Premium");
+        console.log(premium);
+    }
+}
+cuentas();
 
 
 
