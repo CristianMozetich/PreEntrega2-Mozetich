@@ -68,6 +68,13 @@ const sumarTarjetaDebito = arrayPlan.map ((plan =>{
 }))
 console.log(sumarTarjetaDebito)
 
+function tarjeta (){
+    let debitCard = prompt ("¿Would you like to get a debit card? \n yes \n no");
+    if (debitCard === "yes"){
+        console.log (sumarTarjetaDebito);
+    }
+}
+tarjeta();
 
 
 
