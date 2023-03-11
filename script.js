@@ -60,6 +60,15 @@ function monstrarDetalles(account){
 cuentas();
 
 
+const sumarTarjetaDebito = arrayPlan.map ((plan =>{
+    return{
+        name: plan.name,
+        price: (plan.price + 3),
+    }
+}))
+console.log(sumarTarjetaDebito)
+
+
 
 
 
