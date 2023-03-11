@@ -11,9 +11,9 @@ console.log(usuario)
 
 
 function cuentas (){
-    let account = parseInt(prompt("¿What account would you like to get? \n 1)Standard Account \n 2)Smart Account \n 3)Premium Account"));
+    let account = parseInt(prompt("¿What account would you like to get? \n 1)Standard Account \n 2)Smart Account \n 3)Golden Account"));
     while (account <1 || account >3){
-        account = parseInt(prompt("¿What account would you like to get? \n 1)Standard Account \n 2)Smart Account \n 3)Premium Account"));
+        account = parseInt(prompt("¿What account would you like to get? \n 1)Standard Account \n 2)Smart Account \n 3)Golden Account"));
     }    
     monstrarDetalles (account);
 }
@@ -27,10 +27,10 @@ class plan{
 }
 const standard = new plan ('standard', 5);
 const smart = new plan ('smart', 10);
-const premium = new plan ('premium', 20);
+const golden = new plan ('golden', 20);
 
 
-const arrayPlan = [standard, smart, premium];
+const arrayPlan = [standard, smart, golden];
 console.log (arrayPlan);
 
 
@@ -53,8 +53,8 @@ function monstrarDetalles(account){
         alert ("Thank you, You selected Smart Account");
         console.log(smart);
     } else if (account === 3){
-        alert ("Thank you, You selected Premium Account");
-        console.log(premium);
+        alert ("Thank you, You selected Golden Account");
+        console.log(golden);
     }
 }
 cuentas();
