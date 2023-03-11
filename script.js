@@ -1,8 +1,8 @@
 function cliente(){
     alert ("Welcome to PIG BANK");
-    let usuario = prompt ("Ingrese su nombre para continuar");
+    let usuario = prompt ("Please, type your name to continue");
     while (usuario === ""){
-        usuario = prompt("Ingrese su nombre para continuar");
+        usuario = prompt("Please, type your name to continue");
     }
     return usuario
 }
@@ -11,9 +11,9 @@ console.log(usuario)
 
 
 function cuentas (){
-    let account = parseInt(prompt("¿Que tipo de cuenta le gustaria adquirir? \n 1) Cuenta Standard \n 2) Cuenta Smart \n 3) Cuenta Premium"));
+    let account = parseInt(prompt("¿What account would you like to get? \n 1)Standard Account \n 2)Smart Account \n 3)Premium Account"));
     while (account <1 || account >3){
-        account = parseInt(prompt("¿Que tipo de cuenta le gustaria adquirir? \n 1) Cuenta Standard \n 2) Cuenta Smart \n 3) Cuenta Premium"));
+        account = parseInt(prompt("¿What account would you like to get? \n 1)Standard Account \n 2)Smart Account \n 3)Premium Account"));
     }    
     monstrarDetalles (account);
 }
@@ -35,10 +35,10 @@ console.log (arrayAccounts);
 
 
 const divAccounts = document.getElementById ("container")
-arrayAccounts.forEach (account =>{
+arrayAccounts.forEach (accounts =>{
     const div = document.createElement ("div");
-    div.innerHTML = `<p>Name: ${account.name} </p>
-                     <p>Price: ${account.price} </p>
+    div.innerHTML = `<p>Name: ${accounts.name} </p>
+                     <p>Price: ${accounts.price} </p>
                      <button>Get this account</button>`
     divAccounts.appendChild(div);
 });
@@ -47,13 +47,13 @@ arrayAccounts.forEach (account =>{
 
 function monstrarDetalles(account){
     if (account === 1){
-        alert ("Usted selecciono cuenta Standard");
+        alert ("Thank you, You selected Standard Account");
         console.log (standard);
     } else if (account === 2){
-        alert ("Usted selecciono cuenta Smart");
+        alert ("Thank you, You selected Smart Account");
         console.log(smart);
     } else if (account === 3){
-        alert ("Usted selecciono cuenta Premium");
+        alert ("Thank you, You selected Premium Account");
         console.log(premium);
     }
 }
